@@ -9,11 +9,50 @@
     Get your students to evaluate their performance in team projects, and view reports and summaries of their feedback and evaluations.">
     <link rel="stylesheet" href="stylesheets/teammates.css" type="text/css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
     <title>TEAMMATES [Home] - Online Peer Feedback/Evaluation System for Student Team Projects</title>
 
     <script type="text/javascript" src="/js/googleAnalytics.js"></script>
     <script type="text/javascript" src = "/js/checkBrowserVersion.js"></script>
     <script type="text/javascript" src = "/js/index.js"></script>
+    
+    <style type="text/css">
+
+        .overviewByte1 {
+    padding: 10px;
+}
+
+.overviewBytePicture1 {
+    text-align: center;
+    
+}
+
+.overviewByteHeading1 {
+    color: #4379D1;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+    text-align: center;
+    
+}
+
+.overviewByteData1 {
+    padding-left: 30px;
+    color: gray;
+    text-align: center;
+}
+#container1
+{
+margin-bottom:440px;
+}
+
+
+    </style>
+    
+    
 </head>
 
 <body>
@@ -25,6 +64,7 @@
                     <img alt="TEAMMATES[Logo] - Online Peer Feedback/Evaluation System for Student Team Projects" src="images/teammateslogo.jpg" width="150px" height="47px">
                     </a>
                 </div>
+                
                 <div id="menuHolder">
                     <div id="textHolder">
                         <ul id="navbar">
@@ -35,7 +75,8 @@
                             <li><a href="terms.html">Terms of Use</a></li>
                         </ul>
                     </div>
-                   <div id="loginHolder">
+                    
+                    <div id="loginHolder">
                             <form action="/login" style="float: left;" name="studentLogin">
                             <input type="submit" name="student" class="button" id="btnStudentLogin" value="Student Login">
                         </form>
@@ -45,9 +86,15 @@
                    </div>
                    <div style="clear: both;"></div>
                 </div>
+                
                 <div style="clear: both;"></div>
                 </div>
                 </div>
+
+
+
+        
+                
 
                 <div id="mainContent">
                 <div id="browserMessage" style="display: none;"></div>
@@ -59,6 +106,7 @@
 
                 <div class="align-center">
                 <br>
+                
                 <table width="100%">
                     <tr>
                         <td width="140px"></td>
@@ -69,93 +117,122 @@
                         <a href="request.html"><img src="images/requestButton.png" height="40px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     </tr>
                 </table>
+                
                 </div>
                 <img src="images/raised-edge.png" width="900px" height="30px">
                 <br>
-
-                <div class="overviewByte">
-                    <div class="overviewBytePicture">
-                        <img alt="TEAMMATES - Praised by Users" src="images/overview_praise.png" width="175px">
+                
+                <br/>
+                
+                
+                <div id = "container1" style = "width:100%">
+                    <div id ="left" style = "float:left; width: 33%;">
+                        <div class="overviewByte1">
+                            <div class="overviewBytePicture1">
+                                <img alt="TEAMMATES - Praised by Users" src="images/overview_praise.png" width="175px">
+                            </div>
+                        <div class="overviewByteData1">
+                            <h2 class="overviewByteHeading1">Praised by Users:</h2>
+                            <p id="testimonialContainer1">
+                                Thank you for building such a wonderful tool. 
+                                    <br>-Faculty user, Canada
+                            </p>
+                        </div>
+                        <div style="clear: both;"></div>
+                        </div>
                     </div>
-                    <div class="overviewByteData">
-                        <h2 class="overviewByteHeading">Praised by Users:</h2>
-                        <p id="testimonialContainer">
-                            Thank you for building such a wonderful tool. 
-                            <br>-Faculty user, Canada
+                    
+                    <div id = "middle" style = "float:left; width: 33%;">
+                        <div class="overviewByte1">
+                            <div class="overviewBytePicture1">
+                                <img alt="TEAMMATES - Award winning, mature, field-tested and improving all the time" src="images/award_winning.png" width="175px">
+                            </div>
+                            <div class="overviewByteData1">
+                                <h2 class="overviewByteHeading1">Award Winning, Mature, Field-tested:</h2>
+                                <p>TEAMMATES has been in operation since 2010. It has benefited from the work of over 
+                                    <a href="about.html">100 developers</a>. <br>TEAMMATES won the Grand Prize at the 
+                                        OSS Awards World Challenge 2014 and was selected for the Google Summer of Code
+                                        program in 2014.
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>
+                    </div>
+                    <div id = "right" style = "float:left; width: 33%;">
+                        <div class="overviewByte1">
+                            <div class="overviewBytePicture1">
+                                <img alt="TEAMMATES - Designed for simplicity, flexibility, power1" src="images/overview_peerfeedback.png" width="175px">
+                            </div>
+                
+                             <div class="overviewByteData1">
+                                <h2 class="overviewByteHeading1">Designed for Simplicity, Flexibility, and Power:</h2>
+                                    <p>TEAMMATES was designed by a team of teachers and students, for teachers and students. It aims to provide all the benefits
+                                            of peer feedback and peer evaluations, without having to configure too many options or having to learn too many unnecessary 
+                                            features. <a href="features.html">More about our features...</a></p>
+                              </div>
+                              <div style="clear: both;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <br />
+                <br />
+                <br />
+                
+                <div id = "container1" style = "width:100%"> 
+                    <div id ="left" style = "float:left; width: 33%;">
+                        <div class="overviewByte1">
+                            <div class="overviewBytePicture1">
+                                    <img alt="TEAMMATES - Powered by Google Infrastructure" src="images/overview_google.png" width="175px">
+                            </div>
+                            <div class="overviewByteData1">
+                                <h2 class="overviewByteHeading1">Powered by Google Infrastructure:</h2>
+                                <p>TEAMMATES runs on the <a href="https://cloud.google.com/products/" target="blank">Google App Engine</a>, using
+                             cutting edge cloud technologies and benefiting from the same systems and infrastructure that power Google's applications.</p>
+                             </div>
+                             <div style="clear: both;"></div>
+                        </div>
+                    </div>
+                    
+                     <div id = "middle" style = "float:left; width: 33%;">
+                    <div class="overviewByte1">
+                        <div class="overviewBytePicture1">
+                            <img alt="TEAMMATES - Growing global community" src="images/overview_countries.png" width="175px">
+                        </div>
+                        <div class="overviewByteData1">
+                            <h2 class="overviewByteHeading1">Growing Global Community:</h2>
+                            <p>TEAMMATES community is growing fast, spanning over 250 universities from many countries across the globe: Singapore, 
+                            Canada, USA, UK, Turkey, Australia, Malaysia, Belgium, Taiwan, Macau, Sri Lanka, India, China, Vietnam, and more ...</p>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                    </div>
+                  
+                     <div id = "right" style = "float:left; width: 33%;">
+
+                    <div class="overviewByte1">
+                      <div class="overviewBytePicture1">
+                        <img alt="TEAMMATES - Not for Profit" src="images/overview_funding.png" width="175px">
+                      </div>
+                      <div class="overviewByteData1">
+                        <h2 class="overviewByteHeading1">Not for Profit:</h2>
+                        <p>
+                          TEAMMATES does not have commercial ambitions. It is funded by a <span class="italic">Teaching
+                            Enhancement Grant</span> from the <a href="http://www.cdtl.nus.edu.sg/" target="blank">Centre
+                            for Development of Teaching and Learning (CDTL)</a> in the National University of
+                          Singapore. TEAMMATES also received funding support under the <a
+                            href="https://www.google-melange.com/gsoc/homepage/google/gsoc2014"> Google
+                            Summer of Code 2014</a> program.
                         </p>
+                      </div>
+                      <div style="clear: both;"></div>
                     </div>
-                    <div style="clear: both;"></div>
-                </div>
                 
-                <div class="overviewByte">
-                    <div class="overviewBytePicture">
-                        <img alt="TEAMMATES - Award winning, mature, field-tested and improving all the time" src="images/award_winning.png" width="175px">
-                    </div>
-                    <div class="overviewByteData">
-                        <h2 class="overviewByteHeading">Award Winning, Mature, Field-tested:</h2>
-                        <p>TEAMMATES has been in operation since 2010. It has benefited from the work of over 
-                         <a href="about.html">100 developers</a>. <br>TEAMMATES won the Grand Prize at the 
-                         OSS Awards World Challenge 2014 and was selected for the Google Summer of Code
-                         program in 2014.
-                    </div>
-                    <div style="clear: both;"></div>
+                      </div>
                 </div>
 
-                <div class="overviewByte">
-                <div class="overviewBytePicture">
-                    <img alt="TEAMMATES - Designed for simplicity, flexibility, power" src="images/overview_peerfeedback.png" width="175px">
-                </div>
-                <div class="overviewByteData">
-                    <h2 class="overviewByteHeading">Designed for Simplicity, Flexibility, and Power:</h2>
-                    <p>TEAMMATES was designed by a team of teachers and students, for teachers and students. It aims to provide all the benefits
-                     of peer feedback and peer evaluations, without having to configure too many options or having to learn too many unnecessary 
-                     features. <a href="features.html">More about our features...</a></p>
-                </div>
-                <div style="clear: both;"></div>
-                </div>
-                
-                <div class="overviewByte">
-                    <div class="overviewBytePicture">
-                        <img alt="TEAMMATES - Powered by Google Infrastructure" src="images/overview_google.png" width="175px">
-                    </div>
-                    <div class="overviewByteData">
-                        <h2 class="overviewByteHeading">Powered by Google Infrastructure:</h2>
-                        <p>TEAMMATES runs on the <a href="https://cloud.google.com/products/" target="blank">Google App Engine</a>, using
-                        cutting edge cloud technologies and benefiting from the same systems and infrastructure that power Google's applications.</p>
-                    </div>
-                    <div style="clear: both;"></div>
-                </div>
-
-                <div class="overviewByte">
-                    <div class="overviewBytePicture">
-                        <img alt="TEAMMATES - Growing global community" src="images/overview_countries.png" width="175px">
-                    </div>
-                    <div class="overviewByteData">
-                        <h2 class="overviewByteHeading">Growing Global Community:</h2>
-                        <p>TEAMMATES community is growing fast, spanning over 250 universities from many countries across the globe: Singapore, 
-                        Canada, USA, UK, Turkey, Australia, Malaysia, Belgium, Taiwan, Macau, Sri Lanka, India, China, Vietnam, and more ...</p>
-                    </div>
-                    <div style="clear: both;"></div>
-                </div>
-
-                <div class="overviewByte">
-                  <div class="overviewBytePicture">
-                    <img alt="TEAMMATES - Not for Profit" src="images/overview_funding.png" width="175px">
-                  </div>
-                  <div class="overviewByteData">
-                    <h2 class="overviewByteHeading">Not for Profit:</h2>
-                    <p>
-                      TEAMMATES does not have commercial ambitions. It is funded by a <span class="italic">Teaching
-                        Enhancement Grant</span> from the <a href="http://www.cdtl.nus.edu.sg/" target="blank">Centre
-                        for Development of Teaching and Learning (CDTL)</a> in the National University of
-                      Singapore. TEAMMATES also received funding support under the <a
-                        href="https://www.google-melange.com/gsoc/homepage/google/gsoc2014"> Google
-                        Summer of Code 2014</a> program.
-                    </p>
-                  </div>
-                  <div style="clear: both;"></div>
-                </div>
-
+        </div>
+        <br />
+        
         <div class="overviewByte">
                     <div class="overviewBytePicture">
                         <img alt="TEAMMATES - Well received by Academic community" src="images/overview_conference.png" width="175px">
@@ -175,6 +252,10 @@
                 <br>
                 <br>
             </div>
+            
+              
+            
+            
         </div>
     </div>
 

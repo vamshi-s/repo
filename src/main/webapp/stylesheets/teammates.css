@@ -50,20 +50,26 @@ table {
 }
 
 textarea {
-    font-family: Arial, Helvetica, sans-serif;
+    
+    font-family: 'Oswald', sans-serif;
     font-size: 13px;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Indie Flower', cursive;
     font-size: 15px;
     line-height: 20px;
 }
 
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
+h2  {
+    font-family: 'Raleway', sans-serif;
     font-size: 17px;
     line-height: 20px;
+}
+
+#caption
+{
+     font-family: 'Indie Flower', cursive;
 }
 
 .align-center {
@@ -127,7 +133,7 @@ h2 {
 
 #navbar {
    color: white;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Coming Soon', cursive;
    font-size: 14px;
    line-height: 60px;
    font-weight: bold;
@@ -166,7 +172,7 @@ h2 {
 }
 
 #navbar li a {
-   color: white;
+   color: blue;
    text-decoration: none;
 }
 
@@ -211,7 +217,7 @@ h2 {
     color: #e46d0b;
     font-weight: bold;
     font-size: 20px;
-    font-family: Arial, Verdana, Sans-Serif;
+    
 }
 
 #contentHolder {
