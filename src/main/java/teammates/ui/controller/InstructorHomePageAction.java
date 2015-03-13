@@ -29,7 +29,7 @@ public class InstructorHomePageAction extends Action {
         }
         
         new GateKeeper().verifyInstructorPrivileges(account);
-        
+       
         data = new InstructorHomePageData(account);
         data.sortCriteria = getRequestParamValue(Const.ParamsNames.COURSE_SORTING_CRITERIA);
         if (data.sortCriteria == null) {
@@ -72,11 +72,14 @@ public class InstructorHomePageAction extends Action {
             FeedbackSessionAttributes.sortFeedbackSessionsByCreationTimeDescending(course.feedbackSessions);
         }
         
-        if (logic.isNewInstructor(account.googleId)) {
+        if (logic.isNewInstructor(account.googleId) ) {
             statusToUser.add(StatusMessages.HINT_FOR_NEW_INSTRUCTOR);
         }
+        if(logic.isNewInstructor(account.googleId)==false && data.courses.size()==0 )
+        {
+            statusToUser.add("You do not seem to have any courses. Please click on Add New Course to create a course.");
+        }
         statusToAdmin = "instructorHome Page Load<br>" + "Total Courses: " + data.courses.size();
-        
         ShowPageResult response = createShowPageResult(Const.ViewURIs.INSTRUCTOR_HOME, data);
         return response;
 
