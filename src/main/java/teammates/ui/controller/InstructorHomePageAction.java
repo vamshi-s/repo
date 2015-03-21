@@ -77,7 +77,7 @@ public class InstructorHomePageAction extends Action {
         }
         if(logic.isNewInstructor(account.googleId)==false && data.courses.size()==0 )
         {
-            statusToUser.add("You do not seem to have any courses. Please click on Add New Course to create a course.");
+            statusToUser.add("You do not seem to have any courses. Please click on the Add New Course button to create a course.");
         }
         statusToAdmin = "instructorHome Page Load<br>" + "Total Courses: " + data.courses.size();
         ShowPageResult response = createShowPageResult(Const.ViewURIs.INSTRUCTOR_HOME, data);
